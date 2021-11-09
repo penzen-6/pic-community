@@ -1,0 +1,198 @@
+/* root -> views/devise/registarations/new.html.erb */
+#registrations-new {
+    padding-top: 40px;
+
+    .content-block {
+        padding: 50px;
+        width: 100%;
+        border-radius: 16px;
+        background-color: #fff;
+        max-width: 550px;
+        margin: 0 auto;
+        margin-top: 50px;
+
+        .division {
+            border-top: 2px solid #f5f6fb;
+            padding: 10px;
+        }
+
+        .new_user {
+            padding: 40px;
+        }
+
+        .enter-text {
+            
+            .field {
+                padding: 10px;
+
+                input {
+                    flex-grow: 1;
+                    border: 1px solid #f1f4f9;
+                    border-radius: 10px;
+                    position: relative;
+                    min-height: 40px;
+                    width: 100%;
+                }
+            }
+        }
+        
+        .actions {
+            padding-top: 20px;
+            text-align: center;
+
+            .btn-border {
+                background-color: #f1f4f9;
+                display: inline-block;
+                max-width: 300px;
+                text-align: center;
+                border: 0px solid #657ef8;
+                border-radius: 23px;
+                font-size: 18px;
+                color: #657ef8;
+                text-decoration: none;
+                font-weight: bold;
+                padding: 8px 16px;
+                transition: .4s;
+            }
+            
+            .btn-border:hover {
+                background-color: #657ef8;
+                border-color: #657ef8;
+                color: #fff;
+            }
+        }
+
+        .helpful {
+            display: inline-flex;
+            padding: 20px;
+
+            a {
+                background-color: #f1f4f9;
+                display: inline-block;
+                max-width: 300px;
+                text-align: center;
+                border: 0px solid #657ef8;
+                border-radius: 23px;
+                font-size: 18px;
+                color: #657ef8;
+                text-decoration: none;
+                font-weight: bold;
+                padding: 8px 16px;
+                transition: .4s;
+            }
+    
+            a:hover {
+                background-color: #657ef8;
+                border-color: #657ef8;
+                color: #fff;
+            }
+        }
+
+        .division {
+            border-top: 2px solid #f5f6fb;
+            padding: 10px;
+        }
+    }
+
+}
+
+/* root -> views/devise/sessions/new.html.erb */
+
+#sessions-new {
+    padding-top: 40px;
+
+    .content-block {
+        padding: 50px;
+        width: 100%;
+        border-radius: 16px;
+        background-color: #fff;
+        max-width: 550px;
+        margin: 0 auto;
+        margin-top: 50px;
+        
+
+        .division {
+            border-top: 2px solid #f5f6fb;
+            padding: 10px;
+        }
+
+        .new_user {
+            padding: 40px;
+        }
+
+        .enter-text {
+            
+            .field {
+                padding: 10px;
+
+                input {
+                    flex-grow: 1;
+                    border: 1px solid #f1f4f9;
+                    border-radius: 10px;
+                    position: relative;
+                    min-height: 40px;
+                    width: 100%;
+                }
+            }
+        }
+        
+        .actions {
+            padding-top: 20px;
+            text-align: center;
+
+            .btn-border {
+                background-color: #f1f4f9;
+                display: inline-block;
+                max-width: 300px;
+                text-align: center;
+                border: 0px solid #657ef8;
+                border-radius: 23px;
+                font-size: 18px;
+                color: #657ef8;
+                text-decoration: none;
+                font-weight: bold;
+                padding: 8px 16px;
+                transition: .4s;
+            }
+            
+            .btn-border:hover {
+                background-color: #657ef8;
+                border-color: #657ef8;
+                color: #fff;
+            }
+        }
+
+        
+
+        .helpful {
+            display: inline-flex;
+            padding: 20px;
+
+            a {
+                background-color: #f1f4f9;
+                display: inline-block;
+                max-width: 300px;
+                text-align: center;
+                border: 0px solid #657ef8;
+                border-radius: 23px;
+                font-size: 18px;
+                color: #657ef8;
+                text-decoration: none;
+                font-weight: bold;
+                padding: 8px 16px;
+                transition: .4s;
+            }
+    
+            a:hover {
+                background-color: #657ef8;
+                border-color: #657ef8;
+                color: #fff;
+            }
+        }
+
+        .division {
+            border-top: 2px solid #f5f6fb;
+            padding: 10px;
+        }
+    }
+}

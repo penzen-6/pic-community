@@ -1,0 +1,51 @@
+<div id="header">
+  <div id="header-wrp">
+    <div id="header-inner">
+      <div id="header-left">
+        <div id="logo">
+          <a href="/">
+            <%= image_tag "logo.png" %>
+          </a>
+        </div>
+      </div>
+      <div id="header-main">
+        <p>search box area</p>
+      </div>
+      <div id="header-right">
+        <ul id="navbar">
+          <% if user_signed_in? %>
+            <li>
+              <%= link_to "Post up" , new_post_path %>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa fa-bell"></i>
+                Notifications
+              </a>
+            </li>
+            <li class="fade-in">
+              <a href="#">
+                <i class="fa fa-user "></i> 
+                User
+              </a>
+            </li>
+            <li>
+              <%= link_to "Profile", new_profile_path %>
+            </li>
+            <li>
+              <%= link_to "Logout", destroy_user_session_path, method: :delete %>
+            </li>
+          <% else %>
+            <li>
+              <%= link_to "Signup", new_user_registration_path %>
+            </li>
+            <li>
+              <%= link_to "Log in", new_user_session_path %>
+            </li>
+          <% end %>
+        </ul>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>

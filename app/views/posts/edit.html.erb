@@ -1,0 +1,15 @@
+<div id="post-new">
+  <div id="form-block">
+    <h2>Edit</h2>
+    <%= form_with model: Post.new do |f| %>
+      <p>Title</p>
+      <%= f.text_field :content_title, rows: 2, :placeholder => "Please enter title" %>
+      <p>Content</p>
+      <%= f.text_area :content, rows: 5, :placeholder => "Please enter text" %>
+      <%= f.file_field :images, multiple: true %><br>
+      <div class="submit-block">
+        <%= f.submit class: "btn-border", value: "Publish" %>
+      </div>
+    <% end %>
+  </div>
+</div>

@@ -1,0 +1,171 @@
+<div class="content-wrapper">
+  <div class="sidebar-nav">
+    <div class="sidebar sidebar--fixed">
+      <div class="side-menu">
+        <div class="menu-block">
+          <a href="#">
+            <i class="fa fa-home">
+              <p>
+                Home
+              </p>
+            </i>
+          </a>
+        </div>
+        <div class="menu-block">
+          <a href="#">
+            <i class="fa fa-user-plus">
+              <p>
+                Following
+              </p>
+            </i> 
+          </a>
+        </div>
+        <div class="menu-block">
+          <a href="#">
+            <i class="fas fa-gift">
+              <p>
+                Events
+              </p>
+            </i>
+          </a>
+        </div>
+        <div class="menu-block">
+          <a href="#">
+            <i class="fa fa-list-ol">
+              <p>
+                Category
+              </p>
+            </i>
+          </a>
+        </div>
+        <div class="divition">
+        </div>
+        <div class="menu-block">
+          <a href="#">
+            <i class="fa fa-code">
+              <p>
+                More
+              </p>
+            </i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="content-block">
+    <% @posts.each do |post| %>
+      <div class="content">
+        <div class="user-about">
+          <div class="image">
+            <% if post.user.image.attached? %>
+              <%= image_tag post.user.image %>
+            <% else %>  
+              <%= image_tag "sample_user.png" %>
+            <% end %>
+          </div>
+          <div class="user-profile">
+            <div class="user-history">
+              <div class="name">  
+                <%= post.user.name%>
+              </div>
+              <div class="learning-history">
+                <%= "学習歴: #{post.user.learning_history}年"%>
+              </div>
+            </div>
+              <div class="purpose">
+                <%= "Railsの目的: #{post.user.purpose}" %>
+              </div>
+            </div>
+          </div>
+        <div class="post-title">
+          <p>
+            <%= post.content_title %>
+          </p>
+        </div>
+        <div class="post-text">
+          <p>
+            <%= post.content %>
+          </p>
+        </div>
+        <% if post.images.attached? %>
+          <div class="images">
+            <% post.images.each do |image|%>
+              <%= image_tag image %>
+            <% end %>
+          </div>
+        <% end %>
+        <div class="action-menu">
+          <div class="like">
+            <i class="fa fa-thumbs-up "></i>
+          </div>
+          <div class="comment">
+            <a href="/posts/<%= post.id %>">
+              <i class="fa fa-comment"></i></i> 
+            </a>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+  <div class="infomation-nav">
+    <div class="sidebar">
+      <div class="side-menu">
+        <div class="menu-block">
+          <h2>
+            Infomation
+          </h2>
+          <div class="division"></div>
+          <a href="#">
+            <p>
+              Infomation
+            </p>
+          </a>
+        </div>
+        <div class="menu-block">
+          <a href="#">
+            <p>
+              Infomation
+            </p>
+          </a>
+        </div>
+        <div class="menu-block">
+          <a href="#">
+            <p>
+              Infomation
+            </p>
+          </a>
+        </div>
+        <div class="menu-block">
+          <a href="#">
+            <p>
+              Infomation
+            </p>
+          </a>
+        </div>
+        <div class="divition">
+        </div>
+        <div class="menu-block">
+          <a href="#">
+            <p>
+              Infomation
+            </p>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="sidebar sidebar--fixed">
+      <div class="side-menu">
+        <div class="menu-block">
+          <h2>
+            Hot Topics
+          </h2>
+          <a href="#">
+            <p>
+              # tag ranking
+            </p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

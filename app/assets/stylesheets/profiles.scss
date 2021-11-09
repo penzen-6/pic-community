@@ -1,0 +1,80 @@
+// Place all the styles related to the profiles controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+#profiles-new, #profiles-edit, #profiles-create, #profiles-update {
+    padding-top: 40px;
+
+    #form-block {
+        padding: 50px;
+        width: 60%;
+        border-radius: 16px;
+        background-color: #fff;
+        max-width: 550px;
+        margin: 0 auto;
+        margin-top: 50px;
+    
+    
+        h2 {
+          font-size: 22px;
+          height: 40px;
+          border-bottom: 1px solid #f1f4f9;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          color: #808080;
+        }
+      
+        form {
+
+            label {
+                margin: 10px 0;
+                color: #808080;
+                display: block;
+            }
+
+            input {
+                width: 100%;
+                border: 1px solid #f1f4f9;
+                min-height: 50px;
+            }
+      
+            
+      
+            textarea {
+                flex-grow: 1;
+                border: 1px solid #f1f4f9;
+                border-radius: 8px;
+                min-height: 300px;
+                width: 100%;
+            }
+      
+            .submit-block {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 15px 0;
+            }
+      
+            .btn-border {
+                display: inline-block;
+                max-width: 180px;
+                text-align: center;
+                border: 0px solid #657ef8;
+                border-radius: 23px;
+                font-size: 16px;
+                color: #657ef8;
+                text-decoration: none;
+                font-weight: bold;
+                padding: 8px 16px;
+                transition: .4s;
+            }
+            
+            .btn-border:hover {
+                background-color: #657ef8;
+                border-color: #657ef8;
+                color: #fff;
+            }
+        }
+    }
+}

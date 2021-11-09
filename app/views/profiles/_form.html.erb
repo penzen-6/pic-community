@@ -1,0 +1,13 @@
+<%= form_with model: @profile, local: true do |f| %>
+    <%= f.label :Name %>
+    <%= f.text_field :name, rows: 2, :placeholder => "Please enter title" %>
+    <%= f.label :Leaning_History %>
+    <%= f.number_field :learning_history, rows: 5, :placeholder => "Please enter text" %>
+    <%= f.label :Purpose %>
+    <%= f.text_area :purpose, rows: 5, :placeholder => "Please enter text" %>
+    <%= f.label :Image %>
+    <%= f.file_field :image %><br>
+    <div class="submit-block">
+        <%= f.submit class: "btn-border" %>
+    </div>
+<% end %>
